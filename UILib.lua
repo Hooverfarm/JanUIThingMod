@@ -498,9 +498,6 @@ local function createBind(option, parent)
 end
 
 local function createSlider(option, parent)
-	option.min = option.min * 10
-	option.max = option.max * 10
-	
 	local main = library:Create("Frame", {
 		LayoutOrder = option.position,
 		Size = UDim2.new(1, 0, 0, 50),
