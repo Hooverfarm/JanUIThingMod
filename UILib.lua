@@ -195,6 +195,10 @@ local function createLabel(option, parent)
 		Parent = parent.content
 	})
 
+	function option:Update(Text)
+		main.Text = " "..Text
+	end
+
 	setmetatable(option, {__newindex = function(t, i, v)
 		if i == "Text" then
 			main.Text = " " .. tostring(v)
